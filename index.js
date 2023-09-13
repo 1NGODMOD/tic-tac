@@ -69,7 +69,7 @@ io.on("connection", (socket) => {
 });
 
 app.get("/", (req, res) => {
-  return res.sendFile("__dirname" + index.html);
+  return res.sendFile("index.html");
 });
 
 server.listen(PORT, () => {
