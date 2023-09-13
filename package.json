@@ -5,5 +5,17 @@
     "http": "^0.0.1-security",
     "nodemon": "^3.0.1",
     "socket.io": "^4.7.2"
-  }
+  },
+  "name": "socket",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
