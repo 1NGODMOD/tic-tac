@@ -4,11 +4,12 @@ const app = express();
 const path = require("path");
 const http = require("http");
 const { Server } = require("socket.io");
-
+const cors = require("cors");
 const server = http.createServer(app);
 
 const io = new Server(server);
 app.use(express.static(path.resolve("")));
+app.use(cors);
 const PORT = 3000 || process.env.PORT;
 let arr = [];
 let playingArray = [];
@@ -68,7 +69,7 @@ io.on("connection", (socket) => {
 });
 
 app.get("/", (req, res) => {
-  //   return res.sendFile("index.html");
+  return res.sendFile("__dirname" + index.html);
 });
 
 server.listen(PORT, () => {
