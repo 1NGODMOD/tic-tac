@@ -119,8 +119,10 @@
       </div>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
-
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+  </script>
   <script>
     document.getElementById("loading").style.display = "none";
     document.getElementById("bigcont").style.display = "none";
@@ -128,8 +130,6 @@
     document.getElementById("oppNameCont").style.display = "none";
     document.getElementById("valueCont").style.display = "none";
     document.getElementById("whosTurn").style.display = "none";
-
-    const socket = io();
 
     let name;
 

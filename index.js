@@ -67,12 +67,9 @@ io.on("connection", (socket) => {
   });
 });
 
-app.get(
-  "https://master--astonishing-begonia-19e82d.netlify.app/",
-  (req, res) => {
-    return res.sendFile("index.html");
-  }
-);
+app.get("/", (req, res) => {
+  //   return res.sendFile("index.html");
+});
 
 server.listen(PORT, () => {
   console.log("port connected to 3000");
