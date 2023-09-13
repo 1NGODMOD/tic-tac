@@ -129,7 +129,9 @@
     document.getElementById("valueCont").style.display = "none";
     document.getElementById("whosTurn").style.display = "none";
 
-    const socket = io();
+    const socket = io.connect(
+      "https://master--astonishing-begonia-19e82d.netlify.app"
+    );
 
     let name;
 
